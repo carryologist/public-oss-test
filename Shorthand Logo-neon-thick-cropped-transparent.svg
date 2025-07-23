@@ -1,0 +1,82 @@
+<svg width="300" height="200" viewBox="-75 -65 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Outer halo glow -->
+    <filter id="outerHalo" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="30" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Medium glow -->
+    <filter id="mediumHalo" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Inner intense glow -->
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Core glow -->
+    <filter id="coreGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer halo layer (very soft, wide spread) -->
+  <g filter="url(#outerHalo)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="none" 
+          stroke="#E6F3FF" 
+          stroke-width="12" 
+          opacity="0.3"/>
+  </g>
+  
+  <!-- Medium halo layer -->
+  <g filter="url(#mediumHalo)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="none" 
+          stroke="#F0F8FF" 
+          stroke-width="9" 
+          opacity="0.6"/>
+  </g>
+  
+  
+  <!-- Inner intense glow -->
+  <g filter="url(#innerGlow)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="6" 
+          opacity="0.9"/>
+  </g>
+  
+  <!-- Core glow layer -->
+  <g filter="url(#coreGlow)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="3" 
+          opacity="1.0"/>
+  </g>
+  
+  <!-- Bright core tube -->
+  <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+        fill="none" 
+        stroke="#FFFFFF" 
+        stroke-width="1.5"/>
+</svg>
