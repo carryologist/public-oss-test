@@ -1,0 +1,58 @@
+<svg width="300" height="200" viewBox="-75 -65 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Large background glow -->
+    <filter id="backgroundGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="35" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Medium backlight glow -->
+    <filter id="mediumBacklight" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Soft edge glow -->
+    <filter id="softEdge" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Dark background -->
+  <rect x="-75" y="-65" width="300" height="200" fill="#0A0A0A"/>
+  
+  <!-- Large background glow layer (brightest, most diffused) -->
+  <g filter="url(#backgroundGlow)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="#FFFFFF" 
+          opacity="0.8"/>
+  </g>
+  
+  <!-- Medium backlight glow -->
+  <g filter="url(#mediumBacklight)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="#FFFFFF" 
+          opacity="0.9"/>
+  </g>
+  
+  <!-- Soft edge glow -->
+  <g filter="url(#softEdge)">
+    <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+          fill="#FFFFFF" 
+          opacity="1.0"/>
+  </g>
+  
+  <!-- Black logo on top (creates the cutout effect) -->
+  <path d="M42.1553 0C66.561 0 80.2428 11.4346 80.7051 28.2656L59.6279 28.9053C59.0732 19.5751 50.7065 13.4469 42.1553 13.6299C30.4148 13.8586 21.7247 21.5876 21.7246 33.8447C21.7246 46.1021 30.4147 53.6943 42.1553 53.6943C50.7065 53.6943 58.888 47.84 59.8125 38.5098L80.8906 38.9678C80.3358 56.0731 65.8214 67.6904 42.1553 67.6904C18.4891 67.6904 0 54.4261 0 33.8447C0.000157954 13.172 17.7497 5.44151e-05 42.1553 0ZM146.468 2V66.0312H91V2H146.468Z" 
+        fill="#000000"/>
+</svg>
