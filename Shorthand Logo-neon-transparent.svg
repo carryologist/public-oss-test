@@ -1,0 +1,81 @@
+<svg width="2000" height="938" viewBox="0 0 2000 938" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Outer halo glow -->
+    <filter id="outerHalo" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="25" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Medium glow -->
+    <filter id="mediumHalo" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Inner intense glow -->
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Core glow -->
+    <filter id="coreGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer halo layer (very soft, wide spread) -->
+  <g filter="url(#outerHalo)">
+    <path d="M573.469 0C905.238 0 1090.91 155.607 1097.62 384.516L810.661 393.344C803.953 266.364 689.796 182.917 573.469 185.407C413.288 188.798 295.652 293.462 295.651 460.608C295.651 627.756 413.287 730.831 573.469 730.831C689.796 730.831 800.406 651.146 813.701 524.166L1100.66 530.583C1093.95 762.994 895.975 921.938 573.469 921.938C251.963 921.938 0 740.554 0 460.608C0.00214925 179.317 241.196 0.000740205 573.469 0ZM1993.78 27.2109V899.422H1237.41V27.2109H1993.78Z" 
+          fill="none" 
+          stroke="#E6F3FF" 
+          stroke-width="16" 
+          opacity="0.3"/>
+  </g>
+  
+  <!-- Medium halo layer -->
+  <g filter="url(#mediumHalo)">
+    <path d="M573.469 0C905.238 0 1090.91 155.607 1097.62 384.516L810.661 393.344C803.953 266.364 689.796 182.917 573.469 185.407C413.288 188.798 295.652 293.462 295.651 460.608C295.651 627.756 413.287 730.831 573.469 730.831C689.796 730.831 800.406 651.146 813.701 524.166L1100.66 530.583C1093.95 762.994 895.975 921.938 573.469 921.938C251.963 921.938 0 740.554 0 460.608C0.00214925 179.317 241.196 0.000740205 573.469 0ZM1993.78 27.2109V899.422H1237.41V27.2109H1993.78Z" 
+          fill="none" 
+          stroke="#F0F8FF" 
+          stroke-width="12" 
+          opacity="0.6"/>
+  </g>
+  
+  <!-- Inner intense glow -->
+  <g filter="url(#innerGlow)">
+    <path d="M573.469 0C905.238 0 1090.91 155.607 1097.62 384.516L810.661 393.344C803.953 266.364 689.796 182.917 573.469 185.407C413.288 188.798 295.652 293.462 295.651 460.608C295.651 627.756 413.287 730.831 573.469 730.831C689.796 730.831 800.406 651.146 813.701 524.166L1100.66 530.583C1093.95 762.994 895.975 921.938 573.469 921.938C251.963 921.938 0 740.554 0 460.608C0.00214925 179.317 241.196 0.000740205 573.469 0ZM1993.78 27.2109V899.422H1237.41V27.2109H1993.78Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="8" 
+          opacity="0.9"/>
+  </g>
+  
+  <!-- Core glow layer -->
+  <g filter="url(#coreGlow)">
+    <path d="M573.469 0C905.238 0 1090.91 155.607 1097.62 384.516L810.661 393.344C803.953 266.364 689.796 182.917 573.469 185.407C413.288 188.798 295.652 293.462 295.651 460.608C295.651 627.756 413.287 730.831 573.469 730.831C689.796 730.831 800.406 651.146 813.701 524.166L1100.66 530.583C1093.95 762.994 895.975 921.938 573.469 921.938C251.963 921.938 0 740.554 0 460.608C0.00214925 179.317 241.196 0.000740205 573.469 0ZM1993.78 27.2109V899.422H1237.41V27.2109H1993.78Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="4" 
+          opacity="1.0"/>
+  </g>
+  
+  <!-- Bright core tube -->
+  <path d="M573.469 0C905.238 0 1090.91 155.607 1097.62 384.516L810.661 393.344C803.953 266.364 689.796 182.917 573.469 185.407C413.288 188.798 295.652 293.462 295.651 460.608C295.651 627.756 413.287 730.831 573.469 730.831C689.796 730.831 800.406 651.146 813.701 524.166L1100.66 530.583C1093.95 762.994 895.975 921.938 573.469 921.938C251.963 921.938 0 740.554 0 460.608C0.00214925 179.317 241.196 0.000740205 573.469 0ZM1993.78 27.2109V899.422H1237.41V27.2109H1993.78Z" 
+        fill="none" 
+        stroke="#FFFFFF" 
+        stroke-width="2"/>
+</svg>
